@@ -1,6 +1,15 @@
 This is an artifact for ICSE25 R1 #35 submission,
 
-Note that AFL++ discard the original deterministic stage from v4.10c, so for AFL++ with deterministic stage, we opt for some commits earlyer (before skip introduced), this is same as AFL++ 4.10c except skipdet module. 
+# Regarding SkipDet and AFL++ baseline
+
+SkipDet has been merged into AFL++ mainstream as the default option. So for SkipDet, we just download 
+AFL++ and didn't provide additional code repo. 
+
+For AFL++-havoc, we use the same version of AFL++ as SkipDet, and patch a line of code to enable AFL++-havoc.
+
+Note that AFL++ discard the original deterministic stage from v4.10c, so for AFL++ with deterministic 
+stage, we opt for some commits earlyer (before skip introduced), this is same as AFL++ 4.10c except skipdet module. 
+
 
 # Run the campaign
 
