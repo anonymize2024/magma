@@ -1,0 +1,12 @@
+diff --git a/src/afl-fuzz-one.c b/src/afl-fuzz-one.c
+index 01e34b69..83b56554 100644
+--- a/src/afl-fuzz-one.c
++++ b/src/afl-fuzz-one.c
+@@ -2019,6 +2019,7 @@ custom_mutator_stage:
+    ****************/
+ 
+ havoc_stage:
++  goto abandon_entry;
+ 
+   if (unlikely(afl->custom_only)) {
+ 
