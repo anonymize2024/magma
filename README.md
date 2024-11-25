@@ -1,11 +1,11 @@
-This is an artifact for ICSE25 R1 #35 submission,
+This is an artifact for FSE'25 submission,
 
-# Regarding SkipDet and AFL++ baseline
+# Regarding MendelFuzz and AFL++ baseline
 
-SkipDet has been merged into AFL++ mainstream as the default option. So for SkipDet, we just download 
+MendelFuzz has been merged into AFL++ mainstream as the default option. So for MendelFuzz, we just download 
 AFL++ and didn't provide additional code repo. 
 
-For AFL++-havoc, we use the same version of AFL++ as SkipDet, and patch a line of code to enable AFL++-havoc.
+For AFL++-havoc, we use the same version of AFL++ as MendelFuzz, and patch a line of code to enable AFL++-havoc.
 
 Note that AFL++ discard the original deterministic stage from v4.10c, so for AFL++ with deterministic 
 stage, we opt for some commits earlyer (before skip introduced), this is same as AFL++ 4.10c except skipdet module. 
@@ -13,7 +13,7 @@ stage, we opt for some commits earlyer (before skip introduced), this is same as
 
 # Run the campaign
 
-you may follow the standard magma instruction to run campaign, the aflplusplus_skipdet is our prototype SkipDet.
+you may follow the standard magma instruction to run campaign, the aflplusplus_skipdet is our prototype MendelFuzz.
 
 We modify the captainrc and include all fuzzers in primary evaluation.
 
